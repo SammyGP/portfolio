@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
 
     scaleVideoContainer();
 
@@ -12,6 +12,28 @@ $( document ).ready(function() {
         scaleBannerVideoSize('.video-container .filter');
         scaleBannerVideoSize('.video-container video');
     });
+
+    console.log("JQuery initialized");
+    /* =================================================================================== *\*/
+
+    $(window).on("scroll", function() {
+      var scrollTop = $(this).scrollTop();
+
+      $(".header-overlay").css({
+        opacity: function() {
+        var elementHeight = $(this).height(),
+          opacity = ((1 - (elementHeight - scrollTop) / elementHeight) * 0.22) + 0.2;
+
+          return opacity;
+        }
+      });
+    });
+
+
+
+
+
+    /* =================================================================================== */
 
 });
 
@@ -48,13 +70,14 @@ function scaleBannerVideoSize(element){
 
         $(this).width(windowWidth);
 
-        if(windowWidth < 1000){
+        // i disables this since i dont want the video or apsect ratio to change on window resize (its laggy and persists on scaleup)
+      /*  if(windowWidth < 1000){
             videoHeight = windowHeight;
             videoWidth = videoHeight / videoAspectRatio;
             $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
 
             $(this).width(videoWidth).height(videoHeight);
-        }
+        }*/
 
         $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
 
