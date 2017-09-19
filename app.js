@@ -7,7 +7,10 @@ app.use(express.static('public'))
 app.get("/", function(req, res){
 	res.render("index.ejs");
 });
+app.get("*", function(req, res){
+	res.redirect("/");
+});
 
-app.listen(3000, function(){
-	console.log("Portfolio server is running");
+app.listen(3000, process.env.IP, function(){
+	console.log(process.env.IP);
 });
