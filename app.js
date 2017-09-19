@@ -11,6 +11,4 @@ app.get("*", function(req, res){
 	res.redirect("/");
 });
 
-app.listen(3000, function(){
-	console.log(process.env.IP);
-});
+app.listen(process.env.PORT, process.env.IP);
