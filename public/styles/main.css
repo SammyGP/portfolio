@@ -64,7 +64,8 @@
 }
 html {
     margin:0;
-    background-color:rgba(0,0,0,0.87);
+    padding:0;
+    background-color:#292830;
 }
 /* ********** */
 h1, h2 {
@@ -73,9 +74,11 @@ h1, h2 {
 .headline {
     border:5px solid white;
 }
-.navbar {
-    opacity: 0;
-    color:white;
+.navbar, .night-blue {
+    background-color:#43536C !important;
+}
+.nav-color, .about-navi, .lamp-yellow {
+    color:#FDB964 !important;
 }
 .header { /* The banner with name */
     width:100% !important;
@@ -115,6 +118,9 @@ h1, h2 {
 }
 #contact {
     height:50vh;
+}
+#contact-header {
+    color:#292830;
 }
 #imgcontainer {
     height:70vh;
