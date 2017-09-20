@@ -6,6 +6,7 @@
 	    <!-- ICONS/FONTS -->
 	    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	    <!-- ******* -->
 	    <!-- BOOSTRAP -->
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -25,12 +26,15 @@
 			    <div class="video-container">
 			    	<nav class="nav-menu ">
 				    	<div class="ui six item inverted menu navbar">
-						      	<a href="https://github.com/SammyGP" target="_blank" class="item"><i class="github icon nav-color"></i></a>
-							    <a href="/" class="item nav-color">Home</a>
-							    <a class="item scroll nav-color">About</a>
-							    <a class="item scroll nav-color">Projects</a>
-							    <a class="item scroll nav-color">Skills</a>
-							    <a class="item scroll nav-color">Contact</a>
+				    		<div class="item">
+						    	<a href="https://github.com/SammyGP" target="_blank" class="item"><i class="github icon nav-color"></i></a>
+						    	<a href="https://www.linkedin.com/in/samuel-gomez-palom%C3%A4ki-a23886139/" target="_blank" class="item"><i class="linkedin icon nav-color"></i></a>
+						    </div>
+							<a href="/" class="item nav-color">Home</a>
+							<a class="item scroll nav-color">About</a>
+							<a class="item scroll nav-color">Projects</a>
+							<a class="item scroll nav-color">Skills</a>
+							<a class="item scroll nav-color">Contact</a>
 						</div>
 				    </nav>
 			        <div class="filter header flex-container">
@@ -50,11 +54,13 @@
 <!-- ************************************************************** -->
 
 <!-- ABOUT -->
-		<div id="about">
-			<div class="ui basic segment">
+		<div id="about-section">
+			<div class="ui basic segment" >
 			    <span><img /></span>
-			    <h2>About Me</h2>
-			    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			    <h2 class="headline ui centered header">About Me</h2>
+			    <p class="about ui basic segment"><span id="hello">Hello, World!</span>
+			    I'm Samuel aspiring web developer currently based in Sweden. I'm a self taught front end based developer that focuses on JavaScript, I'm always growing my skills learning something new every day.
+			    </p>
 		   	</div>
 		</div>
 
@@ -63,8 +69,8 @@
 	    </div>
 
 <!-- PROJECTS -->
-	    <div class="projects" id="projects">
-	    	<h1 class="ui header">Showcase</h1>
+	    <div id="projects-section">
+	    	<h1 class="headline ui header">Showcase</h1>
 	    	<div class="ui main basic segment">
 	    		<!-- FIRST -->
 	    		<div class="ui segment hover">
@@ -149,9 +155,9 @@
 
 <!-- SKILLS -->
 	<div id="container ui black inverted">
-	    <div class="skills ui grid raised segment" id="skills">
+	    <div class="ui grid raised segment" id="skills-section">
 	    	<div class="sixteen wide column">
-			    <h1 class="ui header">Skills</h1>
+			    <h1 class="headline ui header">Skills</h1>
 			    <div class="ui horizontal divider">
 			    	<p>Some of the libraries, tools and languages i like to use.</p>
 			    </div>
@@ -185,7 +191,7 @@
 		        </div>
 		        <div class="four wide column">
 		        	<div class="grid-item">
-		        		<div data-tooltip="Vue.js"><i class="devicon-vuejs-plain colored"></i>In Progress....</div>
+		        		<div data-tooltip="Vue.js"><i class="devicon-vuejs-line"></i>In Progress....</div>
 		        	</div>
 		        </div>
 		        <div class="four wide column">
@@ -217,7 +223,7 @@
 <!-- CONTACT -->
 	    <!-- seperate /page for contact? -->
 
-		    <div class="contact ui segment" id="contact">
+		    <div class="contact ui segment" id="contact-section">
 		      <h2 class="ui centered header" id="contact-header">Get in touch</h2>
 		      <div class="ui divider"></div>
 		      <form action="https://formspree.io/gressboldude@gmail.com" method="post">

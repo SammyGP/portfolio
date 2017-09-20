@@ -68,11 +68,17 @@ html {
     background-color:#292830;
 }
 /* ********** */
-h1, h2 {
-    font-family:"Quicksand", "sans-serif";
+h1, h2, a {
+    font-family:"Quicksand", "sans-serif" !important;
+}
+p {
+    font-family: 'Montserrat', sans-serif !important;
 }
 .headline {
-    border:5px solid white;
+    padding-top:1% !important;
+    margin:auto !important;
+    width:20% !important;
+    border-bottom:5px solid #1D2027 !important;
 }
 .navbar, .night-blue {
     background-color:#43536C !important;
@@ -86,14 +92,28 @@ h1, h2 {
     color:#FDB964 !important;
 }
 .header { /* The banner with name */
-    width:100% !important;
+
     margin:auto;
 }
-#about {
+#hello {
+    font-family:"Quicksand", "sans-serif";
+    font-weight:550 !important;
+    padding:0.2em;
+    border:2px solid #43536C !important;
+}
+#about-section {
     height:100vh;
     background-color:white;
 }
-#projects {
+.about {
+    padding-top:4em !important;
+    margin:auto !important;
+    line-height:150%;
+    font-weight:450;
+    font-size:1.5em !important;
+    width:66% !important;
+}
+#projects-section {
     height:auto;
     background-color:white;
     margin:auto;
@@ -115,13 +135,13 @@ h1, h2 {
 #container {
     background-color:black;
 }
-#skills {
+#skills-section {
     height:100vh;
     margin:1%;
     text-align:center;
 
 }
-#contact {
+#contact-section {
     height:50vh;
 }
 #contact-header {
