@@ -1,5 +1,6 @@
-console.log("Scripts works!");
 
+
+//IIFE
 (function(){
 
 
@@ -8,28 +9,27 @@ console.log("Scripts works!");
 
 // scrolldown when pushing the headers down icon 
 	var scroll = document.getElementsByClassName("scroll");
-	console.log(scroll);
 
 	scroll[0].addEventListener("click", function(){
-		document.getElementById("about")
+		document.getElementById("about-section")
 		.scrollIntoView({behavior: "smooth", block: "start"});
 	});
 	scroll[1].addEventListener("click", function(){
-		var about = document.getElementById("projects")
+		document.getElementById("projects-section")
 		.scrollIntoView({behavior: "smooth", block: "start"});
 	});
 	scroll[2].addEventListener("click", function(){
-		var about = document.getElementById("skills")
+		document.getElementById("skills-section")
 		.scrollIntoView({behavior: "smooth", block: "start"});
 	});
 	scroll[3].addEventListener("click", function(){
-		var about = document.getElementById("contact")
+		document.getElementById("contact-section")
 		.scrollIntoView({behavior: "smooth", block: "start"});
 	})
 
 	document.getElementById("down-arrow").addEventListener("click",function(){
-		var about = document.getElementById("about");
-		about.scrollIntoView({behavior: "smooth", block: "start"});
+		document.getElementById("about-section")
+		.scrollIntoView({behavior: "smooth", block: "start"});
 	});
 
 
